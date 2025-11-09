@@ -43,6 +43,62 @@ This tool detects unusual patterns in contracting data. **Patterns are NOT proof
 
 ---
 
+## 📸 Dashboard Preview
+
+The Enhanced Dashboard provides a comprehensive view of contracting patterns:
+
+### What You'll See:
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  📊 GOVERNMENT CONTRACT PATTERN MONITOR DASHBOARD           │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  📈 KEY METRICS                                             │
+│  ┌───────────────┬───────────────┬───────────────┐         │
+│  │ Total         │ Emergency     │ Large         │         │
+│  │ Contracts     │ Procurement   │ Contracts     │         │
+│  │ 230           │ 12            │ 8             │         │
+│  └───────────────┴───────────────┴───────────────┘         │
+│                                                             │
+│  📋 PATTERN ANALYSIS                                        │
+│  ┌─────────────────────────────────────────────────────┐   │
+│  │ • Rapid Accumulation Patterns: 2 companies          │   │
+│  │ • No-Bid Contracts: 15 in last 6 months            │   │
+│  │ • Emergency Justifications: 12 patterns detected   │   │
+│  └─────────────────────────────────────────────────────┘   │
+│                                                             │
+│  📊 TIMELINE VISUALIZATION                                  │
+│  └─ Interactive charts showing contract volume over time   │
+│                                                             │
+│  🏢 AGENCY BREAKDOWN                                        │
+│  └─ Risk indicators by awarding agency                     │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Features:**
+- 📊 Interactive Plotly visualizations
+- 🔍 Clickable metric cards for detailed views
+- 📈 Timeline analysis with historical trends
+- 🏢 Agency-by-agency pattern breakdown
+- 🚨 Alert system for unusual patterns
+
+> 💡 **Tip:** After setup, run `python3 enhanced_dashboard.py` to launch the dashboard at http://127.0.0.1:8080
+
+<!--
+### Screenshot (Add Your Own)
+To add a screenshot of your dashboard:
+1. Run: `python3 enhanced_dashboard.py`
+2. Take a screenshot
+3. Save as `docs/dashboard-screenshot.png`
+4. Uncomment the line below
+
+![Dashboard Screenshot](docs/dashboard-screenshot.png)
+-->
+
+---
+
 ## 🚀 Quick Start
 
 ### Main Interface (Recommended)
