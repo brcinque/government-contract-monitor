@@ -1,0 +1,137 @@
+# Government Contract Monitor - .gitignore
+
+# ===== SENSITIVE DATA - DO NOT COMMIT =====
+# API Tokens and Keys
+token.txt
+*.token
+.env
+.env.local
+credentials.json
+
+# Database Files (users should generate their own)
+*.db
+*.sqlite
+*.sqlite3
+
+# ===== Python =====
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# ===== IDEs and Editors =====
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# ===== Operating System =====
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ===== Logs and Temporary Files =====
+*.log
+*.log.*
+collection.log
+collection_*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# ===== Application Specific =====
+# Collected data exports
+exports/
+data_exports/
+backups/
+*.csv.bak
+*.json.bak
+
+# Test data
+test_data/
+scratch/
+
+# Archive and checklist files
+archive/
+*CHECKLIST*.md
+GITHUB_SETUP.md
+PUBLICATION_CHECKLIST.md
+

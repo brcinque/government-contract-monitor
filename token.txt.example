@@ -1,0 +1,33 @@
+# SAM.gov API Token Configuration
+# 
+# To use this Government Contract Monitor, you need a SAM.gov API token.
+# 
+# ====================================
+# HOW TO GET YOUR SAM.GOV API TOKEN:
+# ====================================
+# 
+# 1. Visit: https://sam.gov/
+# 2. Create a free account (no cost for public data access)
+# 3. Navigate to your account settings
+# 4. Generate an API key under "API Access"
+# 5. Copy your API key
+# 
+# IMPORTANT: Your API key format will look like:
+# SAM-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+# 
+# ====================================
+# SETUP INSTRUCTIONS:
+# ====================================
+# 
+# 1. Rename this file from "token.txt.example" to "token.txt"
+# 2. Replace the line below with your actual API token
+# 3. NEVER commit token.txt to version control
+# 
+# ====================================
+# YOUR TOKEN:
+# ====================================
+
+YOUR_SAM_GOV_API_TOKEN_HERE
+
+# Token typically expires in 90 days - check SAM.gov for expiration date
+
