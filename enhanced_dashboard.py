@@ -739,7 +739,7 @@ CRONYISM_DASHBOARD_HTML = """
                     html += '</tr></thead><tbody>';
                     
                     if (data.length === 0) {
-                        html += '<tr><td colspan="6" style="text-align:center; padding:20px;">No contracts in the last 30 days. Run data collection to update.</td></tr>';
+                        html += '<tr><td colspan="6" style="text-align:center; padding:20px;">No contracts in the last 120 days. Run data collection to update.</td></tr>';
                     } else {
                         data.forEach(contract => {
                             html += '<tr>';
