@@ -512,7 +512,7 @@ CRONYISM_DASHBOARD_HTML = """
         </div>
         
         <div class="alerts-section">
-            <h3>📋 Recent Contracts (Last 30 Days)</h3>
+            <h3>📋 Recent Contracts (Last 120 Days)</h3>
             <div id="recent-contracts-container">
                 <p>Loading recent contracts...</p>
             </div>
@@ -848,6 +848,31 @@ def rapid_accumulation_api():
         })
     
     return jsonify(results)
+
+@app.route('/api/recent-contracts')
+def recent_contracts_api():
+    """Get recent contracts from last 120 days"""
+    conn = sqlite3.connect(dashboard_data.db_path)
+    
+    df = pd.read_sql_query('''
+        SELECT 
+            recipient_name,
+            award_amount,
+            awarding_agency,
+            award_date,
+            competition_type,
+            substr(description, 1, 100) as description
+        FROM contracts 
+        WHERE award_date >= date('now', '-120 days')
+        ORDER BY award_date DESC
+        LIMIT 50
+    ''', conn)
+    
+    conn.close()
+    
+    # Convert to list of dictionaries
+    contracts = df.to_dict('records')
+    return jsonify(contracts)
 
 @app.route('/api/large-contracts')
 def large_contracts_api():
